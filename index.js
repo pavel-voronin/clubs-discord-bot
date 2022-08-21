@@ -65,4 +65,5 @@ app.get('/done', async (req, res) => {
   res.end();
 });
 
-app.listen(8080, () => console.log('Running on port 8080'));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Running on port ${PORT}`));
